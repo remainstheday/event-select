@@ -2,6 +2,15 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const EventResults = (props) => {
+
+  const renderEventTypes = (types) => {
+    return types.map((type) => {
+      return (
+      <i className="event-type">{type}</i>
+      )
+    })
+  }
+
   const renderEvents = () => {
     return props.events.map((event, index) => {
       return (
@@ -9,8 +18,9 @@ const EventResults = (props) => {
           <Card.Body>
             <Card.Title>{event.name}</Card.Title>
             <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              {event.city}, {event.state}
+              <br/>
+              {renderEventTypes(event.event_types)}
             </Card.Text>
           </Card.Body>
         </Card>

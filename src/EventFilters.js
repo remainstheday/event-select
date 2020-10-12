@@ -21,5 +21,3 @@ export default EventFilters;
 //     "years": [2018, 2017, 2016, 2015, 2014, 2013, 2012],
 //     "url": ""
 //   }
-
-// [{value: 'marathon', label:'marathon'}, {value: 'marathon', label:'marathon'}]
